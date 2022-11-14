@@ -1,0 +1,36 @@
+@media (max-width: 426px) {
+    main {
+        width: 95%;
+    }
+
+    main .container-flex {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .container-flex .titulo {
+        width: 90%;
+    }
+
+    .container-flex .titulo h1 {
+        width: 100%;
+    }
+
+    .container-flex .avaliacoes {
+        width: 100%;
+    }
+
+    .container-flex .avaliacoes .p-1,
+    .container-flex .avaliacoes .p-2 {
+        margin-right: 0;
+    }
+
+    .container-flex .avaliacoes img {
+        margin-left: 0;
+    }
+
+    .container-flex .avaliacoes img:last-child {
+        margin-right: 0;
+    }
+}
