@@ -1,0 +1,49 @@
+@media (max-width: 375px) {
+    main {
+        width: 100%;
+    }
+
+    main .flex {
+        display: block;
+        text-align: center;
+    }
+
+    main .flex .titulo {
+        width: 100%;
+        margin-bottom: 1.5em;
+    }
+
+    main .flex .titulo h1 {
+        width: 100%;
+    }
+
+    main .flex .titulo p {
+        width: 100%;
+    }
+
+    .flex .avaliacoes {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .flex .avaliacoes .avaliacao {
+        flex-direction: column;
+        justify-content: center;
+        gap: .5em;
+        width: 100%;
+    }
+
+    .flex .avaliacoes .avaliacao p {
+        margin-top: 0;
+    }
+
+    main .grid {
+        grid-gap: 1em;
+        /* background-color: lightgreen; */
+        grid-template-rows: 220px;
+    }
+
+    main .footer p {
+        font-size: 13px
+    }
+}

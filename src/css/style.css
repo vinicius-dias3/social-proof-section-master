@@ -9,140 +9,144 @@ html {
 }
 
 body {
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: hsl(300, 24%, 96%);
+    min-height: 100vh;
 }
 
 main {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    padding: 1em;
+    max-width: 1100px;
+    padding: 2em;
+    /* background-color: lightpink; */
 }
 
-main p {
-    line-height: 1.2em;
-    font-size: 15px;
-    margin-top: 1em;
-}
-
-main .container-flex {
+main .flex {
     display: flex;
+    width: 100%;
+    /* background-color: lightcyan; */
     justify-content: space-between;
-    /* background-color: cornflowerblue; */
-    padding: .5em 0 .5em 0;
+    margin-bottom: 3em;
 }
 
-.container-flex .titulo {
+.flex .titulo {
     width: 40%;
-
 }
 
-.container-flex .avaliacoes {
-    width: 45%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-end;
-    /* background-color: darkgray; */
-}
-
-.container-flex .titulo h1 {
+.flex .titulo h1 {
+    width: 60%;
+    margin-bottom: .9em;
     color: hsl(300, 43%, 22%);
     font-size: 2.2em;
-    width: 65%;
     font-weight: 700;
-    margin-bottom: .8em;
 }
 
-.container-flex .titulo p {
+.flex .titulo p {
+    width: 90%;
+    line-height: 19px;
     color: hsl(303, 10%, 53%);
 }
 
-.container-flex .avaliacoes p {
-    color: hsl(300, 43%, 22%);
-    background-color: hsla(302, 10%, 53%, 0.161);
-    padding: .7em 2.3em .7em .8em;
-    border-radius: .5em;
-    font-weight: 700;
-    text-align: end;
+.flex .avaliacoes {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    /* background-color: orange; */
 }
 
-.container-flex .avaliacoes .p-1 {
+.flex .avaliacoes .avaliacao {
+    /* background-color: aliceblue; */
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+    background-color: hsla(302, 10%, 53%, 0.161);
+    padding: .9em 2.3em .9em 1.3em;
+    border-radius: .5em;
+}
+
+.flex .avaliacoes .avaliacao .estrelas {
+    display: flex;
+    gap: 7px;
+}
+
+.flex .avaliacoes .avaliacao p {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.flex .avaliacoes .um {
     align-self: flex-start;
 }
 
-.container-flex .avaliacoes .p-2 {
+.flex .avaliacoes .dois {
     align-self: center;
 }
 
-.container-flex .avaliacoes img {
-    margin-left: .4em;
+.flex .avaliacoes .avaliacao p {
+    color: hsl(300, 43%, 22%);
 }
 
-.container-flex .avaliacoes img:last-child {
-    margin-right: 1.5em;
-}
-
-.container-grid {
+main .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1.8em;
+    /* grid-template-columns: repeat(auto-fit, 305px); */
+    grid-template-columns: repeat(auto-fit, minmax(305px, 1fr));
     grid-template-rows: 280px;
-    grid-column-gap: 1.8em;
-    margin-top: 2em;
+    /* background-color: lightpink; */
+    margin-bottom: 1.4em;
 }
 
-.item {
+.grid .item {
+    background-color: hsl(300, 43%, 22%);
+    padding: 1.5em 1.8em 2em 1.6em;
+    border-radius: .8em;
+    color: #fff;
+    height: 220px;
     display: flex;
     flex-direction: column;
-    background-color: hsl(300, 43%, 22%);
-    padding: 1.5em 1.6em 2em 1.6em;
-    border-radius: .8em;
-    height: 220px;
 }
 
-.item .topo {
+.grid .item-2 {
+    align-self: center;
+}
+
+.grid .item-3 {
+    align-self: flex-end;
+}
+
+.grid .item .topo {
     display: flex;
     align-items: center;
-    margin-bottom: 1em;
+    gap: 15px;
+    margin-bottom: 2em;
 }
 
-.item .topo img {
-    border-radius: 3em;
-    width: 17%;
-    /* transform: scale(.8); */
-}
-
-.item .topo .titulo-subtitulo {
-    margin-left: 1em;
+.grid .item .topo .titulo-subtitulo {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
 }
 
 .item .topo .titulo-subtitulo h4 {
     color: hsl(300, 24%, 96%);
 }
 
-.item .topo .titulo-subtitulo h4:last-child{
+.item .topo .titulo-subtitulo h4:last-child {
     color: hsl(333, 80%, 67%);
-    margin-top: 5px;
 }
 
-.item p {
-    color: hsl(300, 24%, 96%);
+.grid .item .topo img {
+    border-radius: 40px;
+    width: 19%;
 }
 
-.container-grid .item-2 {
-    align-self: center;
+.grid .item p {
+    line-height: 19px;
 }
 
-.container-grid .item-3 {
-    align-self: flex-end;
-}
-
-.footer {
-    margin-top: 2em;
+main .footer p {
     text-align: end;
     color: hsl(228, 45%, 44%);
     font-size: 14px;
@@ -160,3 +164,4 @@ main .container-flex {
     background-color: rgb(169, 192, 235);
     padding: 5px 3px;
 }
+
