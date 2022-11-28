@@ -41,11 +41,46 @@
 
     main .grid {
         grid-gap: 1em;
-        /* background-color: lightgreen; */
         grid-template-rows: 220px;
     }
 
     main .footer p {
         font-size: 13px
     }
+}
+
+@media (max-width: 768px) {
+    main .flex .titulo {
+    }
+    
+    main .flex .titulo h1 {
+        width: 85%;
+    }
+
+    .flex .avaliacoes .avaliacao {
+        padding: .6em 1.2em .6em 1em;
+        width: 265px;
+    }
+
+    .flex .avaliacoes .avaliacao .estrelas {
+        gap: 3px;
+    }
+
+    main .grid {
+        grid-template-rows: 300px;
+        grid-gap: .8em;
+    }
+
+    .grid .item {
+        height: 240px;
+    }
+
+    .grid .item .topo {
+        margin-bottom: 1.5em;
+    }
+
+    .grid .item .topo img {
+        width: 25%;
+    }
+    
 }
